@@ -27,7 +27,7 @@ function Products({ history }) {
 
   function addNewProduct() {
     selectProduct({});
-    history.push('/products/0');
+    history.push('/products/new');
   }
 
   function handleCancelProduct() {
