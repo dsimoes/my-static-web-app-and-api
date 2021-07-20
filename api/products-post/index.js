@@ -11,7 +11,7 @@ module.exports = async function (context, req) {
     const newProduct = data.addProduct(product);
     context.res = {
       status: 201, /* Defaults to 200 */
-      headers: {'Set-Cookie' : 'DCX__JWT_TOKEN=deleted;Expires=Thu, 01 Jan 1970 00:00:00 GMT;Secure;SameSite=None'},
+      headers: {'Set-Cookie' : 'DCX__JWT_TOKEN=deleted;Secure;SameSite=None'},
       body: newProduct
     };
   } catch (error) {
